@@ -12,17 +12,6 @@ streamlit = "^1.37.0"
 langchain = "^0.2.11"
 langchain-openai = "^0.1.19"
 
-#python = ">=3.11,<3.14"
-#streamlit = ">=1.41"     # 3.13-ready, also fine on 3.12
-#langchain = "^0.2.11"
-#langchain-openai = "^0.1.19"
-numpy = "1.26.4"         # stable on Python 3.12
-pandas = ">=2.2.3"
-pydantic = ">=2.8"
-scikit-learn = ">=1.6"
-
-
-
 
 
 [build-system]
