@@ -29,7 +29,7 @@ def generate_response(tema):
         input_variables = ["tema"],
         template = template
     )
-    query = prompt.format(topic=tema)
+    query = prompt.format(tema=tema)
     response = llm(query, max_tokens=2048)
     return st.write(response)
 
