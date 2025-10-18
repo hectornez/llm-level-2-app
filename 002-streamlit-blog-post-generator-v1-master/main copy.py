@@ -13,7 +13,7 @@ openai_api_key = st.sidebar.text_input(
     type = "password"
 )
 
-def generate_response(topic):
+def generate_response(tema):
     llm = OpenAI(openai_api_key=openai_api_key)
     template = """
         Como redactor experimentado en startups y capital de riesgo,
@@ -29,7 +29,7 @@ def generate_response(topic):
         input_variables = ["tema"],
         template = template
     )
-    query = prompt.format(topic=topic)
+    query = prompt.format(topic=tema)
     response = llm(query, max_tokens=2048)
     return st.write(response)
 
